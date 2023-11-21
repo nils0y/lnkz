@@ -6,13 +6,18 @@
 
 
     <style>
-	html { 
-  background: url(https://iili.io/JnywQvj.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
+
+.bg{
+           background-image: url('https://iili.io/JnywQvj.png');
+        background-repeat: no-repeat; 
+        background-size: cover;
+        width: 1450px;
+        height: 768px;          
+        position: absolute;  
+		-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-}
+      }
       *{
         margin: 0;
         padding: 0;
@@ -24,7 +29,7 @@
         color: #045eb4;
         
       }
-      .butn{position: fixed; bottom: 110px; left: 160px; opacity:1; z-index: 11; border-radius: 5px;}
+      .butn{position:absolute; left: 180px; top: 570px; border-radius: 5px}
       .w3-modal-content{  max-width: 450px; color: #222; border-radius: 4px;}
       .mTitle{ border-bottom:1px solid #eee; padding:5px 15px; text-align:center; }
       .mTitle img{ max-width: 250px; height:auto; }
@@ -39,6 +44,7 @@
   </head>
 
   <body>
+   <div class="bg">
       <div id="myModal" class="w3-modal">
         <div class="w3-modal-content">
           <div class="mTitle"><img src="https://cdn.glitch.global/2320f642-612e-42bb-913c-f646e55193a7/flx-logo.jpg?v=1673780291431"></div>
@@ -69,7 +75,7 @@
     <div>
       <button class="butn w3-button w3-blue" data-toggle="modal" data-target="#myModal">Download All</button>
     </div>
-
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
